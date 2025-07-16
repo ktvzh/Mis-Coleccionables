@@ -1,0 +1,135 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 28 jun. 2025, 3:13:46 p. m.
+    Author     : USER
+*/
+
+.seccion-titulo {
+    text-align: center;
+    font-size: 2rem;
+    color: maroon;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.shipping-container {
+    max-width: 1000px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+}
+
+.shipping-method {
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.shipping-header {
+    background: #911d2b;
+    color: #E0E0FF;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.shipping-icon {
+    font-size: 2rem;
+    margin-right: 20px;
+    color: #4D3BB7;
+}
+
+.shipping-title {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.shipping-content {
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shipping-details {
+    flex: 1;
+    min-width: 250px;
+}
+
+.shipping-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.shipping-details li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.shipping-details li::before {
+    content: "•";
+    color: #4D3BB7;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+
+.shipping-price {
+    background: #001f8e;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.shipping-image {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.shipping-image img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+
+@media (max-width: 768px) {
+    .shipping-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .shipping-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .shipping-icon {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .shipping-content {
+        flex-direction: column;
+    }
+
+    .shipping-image {
+        order: -1;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,131 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 28 may. 2025, 1:09:00 p. m.
+    Author     : USER
+*/
+     
+        /* Contenido principal */
+
+
+.seccion-titulo {
+    text-align: center;
+    font-size: 2rem;
+    color: maroon;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    display: inline-block;
+} 
+      .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Sección Nuestra Historia */
+        .history-section {
+            padding: 80px 0;
+            background-color: antiquewhite;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--color-primario);
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 3px;
+            background-color: var(--color-secundario);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .history-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .history-text {
+            flex: 1;
+        }
+        
+        .history-image {
+            flex: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .history-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        /* Sección Valores */
+        .values-section {
+            padding: 80px 0;
+            background-color: antiquewhite;
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .value-card {
+            text-align: center;
+            padding: 30px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            background-color: white;
+        }
+        
+        .value-card:hover {
+            background-color: gray;
+            color: white;
+            transform: translateY(-5px);
+        }
+        
+        .value-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--color-secundario);
+        }
+        
+        .value-card:hover .value-icon {
+            color: white;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .history-content {
+                flex-direction: column;
+            }
+            
+            .about-header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+        }
+       
+        

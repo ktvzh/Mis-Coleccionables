@@ -1,0 +1,76 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 25 may. 2025, 1:23:12 p. m.
+    Author     : USER
+*/
+/* Solo aplicará en blog.html gracias a class="blog" en <body> */
+body.blog {
+  background-color: antiquewhite;
+}
+
+.contenido-principal {
+  padding: clamp(20px, 3vw, 40px);
+  background-color: antiquewhite;
+}
+
+.seccion-titulo {
+  text-align: center;
+  font-size: 2rem;
+  color: #001f8e;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #ffcc00;
+  display: inline-block;
+}
+
+/* Estilos específicos para el blog */
+.blog-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.articulo {
+  background-color: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.articulo-titulo {
+  background-color: #911d2b;
+  color: white;
+  padding: 15px 20px;
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.articulo-contenido {
+  padding: 20px;
+}
+
+.articulo-contenido p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.articulo-enlace {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #001f8e;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.articulo-enlace:hover {
+  background-color: #0033cc;
+}

@@ -1,0 +1,257 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 30 jun. 2025, 10:41:19 p. m.
+    Author     : USER
+*/
+
+/* Hero Section estilo retro */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 5px solid var(--color-vintage);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-family: 'Times New Roman', serif;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    font-style: italic;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem 3rem;
+}
+
+/* Sección de garantía estilo vintage */
+.warranty-section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    margin: 2rem 0;
+    border: 1px solid #d2b48c;
+    background-image: url('https://www.transparenttextures.com/patterns/paper.png');
+}
+
+.warranty-section h2 {
+    color: var(--color-vintage);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--color-vintage);
+    font-family: 'Times New Roman', serif;
+    font-size: 2rem;
+}
+
+.warranty-section h3 {
+    color: var(--color-vintage);
+    margin: 1.5rem 0 1rem;
+    font-family: 'Times New Roman', serif;
+    font-size: 1.5rem;
+}
+
+.warranty-section p, .warranty-section ul {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+.warranty-section ul {
+    padding-left: 1.5rem;
+}
+
+.warranty-section li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.warranty-section li:before {
+    content: "•";
+    color: var(--color-vintage);
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -3px;
+}
+
+/* Estilos para el acordeón de cobertura */
+.warranty-section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    margin: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d2b48c;
+}
+
+/* Estilos para el acordeón */
+.coverage-accordion {
+  margin: 2rem 0;
+}
+
+.coverage-item {
+  margin-bottom: 1rem;
+  border: 1px solid #d2b48c;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.coverage-header {
+  width: 100%;
+  padding: 1rem;
+  background: #8b4513;
+  color: white;
+  border: none;
+  text-align: left;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coverage-header:hover {
+  background: #5d2e0b;
+}
+
+.coverage-header i {
+  transition: transform 0.3s ease;
+}
+
+.coverage-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background: #fff8f0;
+}
+
+.coverage-content.show {
+  max-height: 1000px;
+  padding: 1rem;
+}
+
+/* Estilos para la calculadora */
+.calculator {
+  background-color: white;
+  color: black;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 3rem 0;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input, 
+.form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.calculate-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.result {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: var(--color-vintage);
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav li {
+        margin: 0.5rem 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 0 1rem 2rem;
+    }
+
+    .warranty-section {
+        padding: 1.5rem;
+    }
+}
+
+/* Estilo para productos destacados */
+.product-category {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: rgba(139, 69, 19, 0.1);
+    border-radius: 4px;
+}
+
+.product-category i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: var(--color-vintage);
+}
+
+.product-category h4 {
+    margin: 0;
+    color: var(--color-vintage);
+    font-family: 'Times New Roman', serif;
+}

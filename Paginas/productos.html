@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colecciones - Mundo Coleccionable</title>
+    <link href="../Estilos/Estilos Productos.css" rel="stylesheet" type="text/css"/>
+    <link href="../Estilos/Estilos Generales.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <div class="marquee-oferta">
+        <div class="marquee-content">
+            <span>⚠️ Oferta especial: </span>
+            <span class="destacado">Ahorra hasta un 20% de descuento</span>
+            <span> en tu primera compra ⚠️ </span>
+            <span>🚀 No dejes pasar esta oportunidad 🚀 </span>
+            <span>⚠️ Oferta especial: </span>
+            <span class="destacado">Ahorra hasta un 20% de descuento</span>
+            <span> en tu primera compra ⚠️ </span>
+        </div>
+    </div>
+    <header class="navbar">
+        <a href="Index.html" class="logo-link">
+            <div class="logo">
+                <img src="../media/Destacados/logo2.png" alt="Logo" width="90"/>
+                <h1>Mundo Coleccionable</h1>
+            </div>
+        </a>
+        <!-- Barra de búsqueda funcional -->
+        <div class="search-container">
+            <form class="search-form" action="productos.html" method="get">
+                <input type="text" id="search-input" name="buscar" placeholder="Buscar...">
+                <button type="submit" class="search-button">Buscar</button>
+            </form>
+
+            <div class="search-results">            
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li class="dropdown">
+                    <a href="#">Productos</a>
+                    <ul class="dropdown-content">
+                        <li><a href="#arcade">Arcade</a></li>
+                        <li><a href="#rocolas">Rocolas</a></li>
+                        <li><a href="#pinball">Pinball</a></li>
+                        <li><a href="#autografos">Autógrafos</a></li>
+                        <li><a href="#comics">Cómics y Mangas</a></li>
+                    </ul>
+                </li>
+                <li><a href="carrito.html">🛒 Carrito</a></li>
+                <li><a href="pago.html">💳 Pago</a></li>
+                <li><a href="login.html">👤Iniciar Sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contenido-principal">
+        <h2 class="seccion-titulo">NUESTROS COLECCIONABLES</h2>
+
+        <section>    
+            <div class="productos-container">    
+                <div class="productos-grid">
+
+                    <div class="producto" id="arcade" data-nombre="Arcade NBA Jam">
+                        <img src="../media/products/a.nba.jpg" alt="" class="producto-imagen"/>
+                        <h3>NBA Jam</h3>
+                        <p>S/.1490</p>
+                        <a href="carrito.html?producto=NBA Jam&precio=1490" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+
+                    <div class="producto" id="arcade">
+                        <img src="../media/products/a.pacman.jpg" alt="pacman">
+                        <h3>Arcade Pac-Man clásico</h3> 
+                        <p>S/.1450</p>
+                        <a href="carrito.html?producto=Arcade Pac-Man clásico&precio=1450" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="arcade">
+                        <img src="../media/products/a.mortal.jpg" alt="Mortal">
+                        <h3>Arcade Mortal Kombat II</h3> 
+                        <p>S/.1500</p>
+                        <a href="carrito.html?producto=Arcade Mortal Kombat II&precio=1500" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="arcade">
+                        <img src="../media/products/a.kong.jpg" alt="donkeykong">
+                        <h3>Arcade Donkey Kong</h3> 
+                        <p>S/.1520</p>
+                        <a href="carrito.html?producto=Arcade Donkey Kong&precio=1520" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="arcade">
+                        <img src="../media/products/a.galaga.jpg" alt="Galaga">
+                        <h3>Arcade Gálaga</h3> 
+                        <p>S/.1480</p>
+                        <a href="carrito.html?producto=Arcade Gálaga&precio=1480" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="arcade">
+                        <img src="../media/products/a.metalslug.jpg" alt="Metal Slug">
+                        <h3>Arcade Metal Slug Multijuegos</h3> 
+                        <p>S/.1550</p>
+                        <a href="carrito.html?producto=Arcade Metal Slug Multijuegos&precio=1550" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="arcade">
+                        <img src="../media/products/a.tortugas.jpg" alt="Tortugas">
+                        <h3>Arcade Teenage Mutant Ninja Turtles</h3> 
+                        <p>S/.1680</p>
+                        <a href="carrito.html?producto=Arcade Teenage Mutant Ninja Turtles&precio=1680" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="arcade">
+                        <img src="../media/products/a.nba.jpg" alt="NBA">
+                        <h3>Arcade NBA Jam</h3> 
+                        <p>S/.1490</p>
+                        <a href="carrito.html?producto=Arcade NBA Jam&precio=1490" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="arcade">
+                        <img src="../media/products/a.marvel.jpg" alt="Marvel">
+                        <h3>Arcade Marvel vs Capcom</h3> 
+                        <p>S/.1610</p>
+                        <a href="carrito.html?producto=Arcade Marvel vs Capcom&precio=1610" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="arcade">
+                        <img src="../media/products/a.space.jpg" alt="Space Invaders">
+                        <h3>Arcade Space Invaders</h3> 
+                        <p>S/.1470</p>
+                        <a href="carrito.html?producto=Arcade Space Invaders&precio=1470" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="arcade">
+                        <img src="../media/products/a.fight.jpg" alt="Final Fight">
+                        <h3>Arcade Final Fight</h3> 
+                        <p>S/.1530</p>
+                        <a href="carrito.html?producto=Arcade Final Fight&precio=1530" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="arcade">
+                        <img src="../media/products/a.dragon.jpg" alt="Double Dragon">
+                        <h3>Arcade Double Dragon</h3> 
+                        <p>S/.1500</p>
+                        <a href="carrito.html?producto=Arcade Double Dragon&precio=1500" class="btn-agregar">Agregar al carrito</a>
+                    </div>    
+
+                    <div class="producto" id="rocolas" data-nombre="Rocola Wurlitzer">
+                        <img src="../media/products/r.1.jpg" alt="Rocola Wurlitzer 1015">
+                        <h3>Rockola Wurlitzer 1015</h3>
+                        <p>S/.1250</p>
+                        <a href="carrito.html?producto=Rockola Wurlitzer 1015&precio=1250" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="rocolas">
+                        <img src="../media/products/r.2.jpg" alt="Rocola Seeburg Select-O-Matic">
+                        <h3>Rockola Seeburg Select-O-Matic</h3>
+                        <p>S/.1180</p>
+                        <a href="carrito.html?producto=Rockola Seeburg Select-O-Matic&precio=1180" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="rocolas">
+                        <img src="../media/products/r.3.jpg" alt="Rocola AMIContinental2">
+                        <h3>Rockola AMI Continental 2 </h3>
+                        <p>S/.1220</p>
+                        <a href="carrito.html?producto=Rockola AMI Continental 2&precio=1220" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="rocolas">
+                        <img src="../media/products/r.4.jpg" alt="Rocola Rock-Ola 1448 ">
+                        <h3> Rock-Ola 1448 </h3>
+                        <p>S/.1150</p>
+                        <a href="carrito.html?producto=Rock-Ola 1448&precio=1150" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="rocolas">
+                        <img src="../media/products/r.5.jpg" alt="Rocola Rowe">
+                        <h3>Rockola Rowe Ami R-84</h3>
+                        <p>S/.1210</p>
+                        <a href="carrito.html?producto=Rockola Rowe Ami R-84&precio=1210" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="rocolas">
+                        <img src="../media/products/r.6.jpg" alt="retro ">
+                        <h3>Rockola digital retro </h3>
+                        <p>S/.1300</p>
+                        <a href="carrito.html?producto=Rockola digital retro&precio=1300" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="rocolas">
+                        <img src="../media/products/r.7.jpg" alt="Rocola Sound ">
+                        <h3>Rockola Sound Leisure Classic</h3>
+                        <p>S/.1250</p>
+                        <a href="carrito.html?producto=Rockola Sound Leisure Classic&precio=1250" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="rocolas">
+                        <img src="../media/products/r8.jpg" alt="Rocola Consul">
+                        <h3>Rockola NSM Consul 120</h3>
+                        <p>S/.1170</p>
+                        <a href="carrito.html?producto=Rockola NSM Consul 120&precio=1170" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="rocolas">
+                        <img src="../media/products/r9.jpg" alt="Rockola Touch Screen">
+                        <h3>Rockola Touch Screen </h3>
+                        <p>S/.1600</p>
+                        <a href="carrito.html?producto=Rockola Touch Screen &precio=1600" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="rocolas">
+                        <img src="../media/products/r10.jpg" alt="Rocola Peacock ">
+                        <h3>Rockola Wurlitzer 850 Peacock</h3>
+                        <p>S/.1365</p>
+                        <a href="carrito.html?producto=Rockola Wurlitzer 850 Peacock&precio=1365" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="rocolas">
+                        <img src="../media/products/r11.jpg" alt="Rocola American">
+                        <h3>Rockola Americana 60’s</h3>
+                        <p>S/.1299</p>
+                        <a href="carrito.html?producto=Rockola Americana 60’s&precio=1299" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <!-- Pinball -->
+                    <div class="producto" id="pinball" data-nombre="Pinball Star wars">
+                        <img src="../media/products/p.1.jpg" alt="Pinball Star Wars">
+                        <h3>Pinball Star Wars edición limitada</h3>
+                        <p>S/.2100</p>
+                        <a href="carrito.html?producto=Pinball Star Wars edición limitada&precio=2100" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="pinball">
+                        <img src="../media/products/p2.jpg" alt="PinballAddams ">
+                        <h3>Pinball The Addams Family </h3>
+                        <p>S/.2000</p>
+                        <a href="carrito.html?producto=Pinball The Addams Family&precio=2000" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="pinball">
+                        <img src="../media/products/r3.png" alt="Pinball Park ">
+                        <h3>Pinball Jurassic Park </h3>
+                        <p>S/.1950</p>
+                        <a href="carrito.html?producto=Pinball Jurassic Park&precio=1950" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="pinball">
+                        <img src="../media/products/p3.jpg" alt="Pinball Simpsons">
+                        <h3> The Simpsons Pinball Party</h3>
+                        <p>S/.2250</p>
+                        <a href="carrito.html?producto=The Simpsons Pinball Party&precio=2250" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="pinball">
+                        <img src="../media/products/p5.jpg" alt="Pinball Avengers">
+                        <h3>Pinball Avengers Infinity Quest </h3>
+                        <p>S/.2150</p>
+                        <a href="carrito.html?producto=Pinball Avengers Infinity Quest&precio=2150" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="pinball">
+                        <img src="../media/products/p6.jpg" alt="Pinball Roses">
+                        <h3>Guns N’ Roses Pinball</h3>
+                        <p>S/.2800</p>
+                        <a href="carrito.html?producto=Guns N’ Roses Pinball&precio=2800" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="pinball">
+                        <img src="../media/products/p7.jpg" alt="Pinball Stranger ">
+                        <h3>Pinball Stranger Things</h3>
+                        <p>S/.2399</p>
+                        <a href="carrito.html?producto=Pinball Stranger Things&precio=2399" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="pinball">
+                        <img src="../media/products/p8.png" alt="Pinball House ">
+                        <h3>Pinball Elvira’s House of Horrors</h3>
+                        <p>S/.1980</p>
+                        <a href="carrito.html?producto=Pinball Elvira’s House of Horrors&precio=1980" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="pinball">
+                        <img src="../media/products/p9.jpg" alt="Pinball Batman 66 ">
+                        <h3>Pinball Batman 66 </h3>
+                        <p>S/.2199</p>
+                        <a href="carrito.html?producto=Batman66&precio=2199" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="pinball">
+                        <img src="../media/products/p10.jpg" alt="Pinball Deadpool">
+                        <h3>Deadpool Pinball</h3>
+                        <p>S/.2149</p>
+                        <a href="carrito.html?producto=Deadpool&precio=2149" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="pinball">
+                        <img src="../media/products/p11.jpg" alt="Pinball Thrones">
+                        <h3>Pinball Game of Thrones </h3>
+                        <p>S/.2499</p>
+                        <a href="carrito.html?producto=Thrones&precio=2499" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <!-- Autógrafos -->
+                    <div class="producto" id="autografos" data-nombre="Autografo Michael">
+                        <img src="../media/products/a1.jpg" alt="Michael Jordan">
+                        <h3>Autógrafo de Michael Jordan</h3>
+                        <p>S/.350</p>
+                        <a href="carrito.html?producto=Michael&precio=350" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="autografos">
+                        <img src="../media/products/a2.jpg" alt="Shakira">
+                        <h3>Autógrafo de Shakira (con certificado) </h3>
+                        <p>S/.400</p>
+                        <a href="carrito.html?producto=Shakira&precio=400" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="autografos">
+                        <img src="../media/products/a3.jpg" alt="Messi ">
+                        <h3>Autógrafo de Lionel Messi en postal </h3>
+                        <p>S/.380</p>
+                        <a href="carrito.html?producto=Messi&precio=380" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="autografos">
+                        <img src="../media/products/a4.jpg" alt="Metallica">
+                        <h3>Autógrafo de Metallica en vinilo </h3>
+                        <p>S/.320</p>
+                        <a href="carrito.html?producto=Metallica&precio=320" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="autografos">
+                        <img src="../media/products/a.5.jpg" alt="Taylor">
+                        <h3>Autógrafo de Taylor Swift en disco </h3>
+                        <p>S/.310</p>
+                        <a href="carrito.html?producto=Taylor&precio=310" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="autografos">
+                        <img src="../media/products/a6.jpg" alt="Ronaldo">
+                        <h3>Autografos de Cristiano Ronaldo en camiseta</h3>
+                        <p>S/.599</p>
+                        <a href="carrito.html?producto=Ronaldo&precio=599" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="autografos">
+                        <img src="../media/products/a7.jpg" alt="Kobe ">
+                        <h3>Autografo de Kobe Bryant en póster </h3>
+                        <p>S/.330</p>
+                        <a href="carrito.html?producto=Kobe&precio=330" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="autografos">
+                        <img src="../media/products/a8.jpg" alt="Selena">
+                        <h3>Autografo de Selena Gomez</h3>
+                        <p>S/.290</p>
+                        <a href="carrito.html?producto=Selena&precio=290" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="autografos">
+                        <img src="../media/products/a9.jpg" alt="Roger">
+                        <h3>Autógrafo de Roger Federer en raqueta </h3>
+                        <p>S/.350</p>
+                        <a href="carrito.html?producto=Roger&precio=350" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="autografos">
+                        <img src="../media/products/a10.jpg" alt="Beatles">
+                        <h3>Autógrafo de The Beatles en vinilo (reedición)</h3>
+                        <p>S/.399</p>
+                        <a href="carrito.html?producto=Beatles&precio=399" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <!-- Cómics y Mangas -->
+                    <div class="producto" id="comics" data-nombre="Comic Amazing Fantasy">
+                        <img src="../media/products/c.fantasy.jpg" alt="Amazing Fantasy">
+                        <h3>Amazing Fantasy #15 (reimpresión)</h3>
+                        <p>S/.90</p>
+                        <a href="carrito.html?producto=Amazing&precio=90" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="comics">
+                        <img src="../media/products/c.naruto.jpg" alt="mangas Naruto ">
+                        <h3>Manga Naruto volumen 1 coleccionista</h3>
+                        <p>S/.100</p>
+                        <a href="carrito.html?producto=Naruto&precio=100" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="comics">
+                        <img src="../media/products/c.batman.jpg" alt="Comics Batman">
+                        <h3>Comics Batman: The Killing Joke especial </h3>
+                        <p>S/.110</p>
+                        <a href="carrito.html?producto=batman&precio=110" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="comics">
+                        <img src="../media/products/c.dball.jpg" alt="comics Dragon Ball ">
+                        <h3>Comics Dragon Ball volumen 1 primera edición </h3>
+                        <p>S/.95</p>
+                        <a href="carrito.html?producto=DragonBall&precio=95" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="comics">
+                        <img src="../media/products/c.onepiece.jpg" alt="mangas OnePiece ">
+                        <h3>Manga One Piece volumen 1</h3>
+                        <p>S/.120</p>
+                        <a href="carrito.html?producto=OnePiece&precio=120" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="comics">
+                        <img src="../media/products/c.xmen.jpg" alt="comics X-Men">
+                        <h3>Comics X-Men #1 (1991)</h3>
+                        <p>S/.105</p>
+                        <a href="carrito.html?producto=X-Men&precio=105" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="comics">
+                        <img src="../media/products/c.deathnote.jpg" alt="mangas Death">
+                        <h3>Manga Death Note Black Edition vol. 1</h3>
+                        <p>S/.110</p>
+                        <a href="carrito.html?producto=Death&precio=110" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="comics">
+                        <img src="../media/products/c.spiderman.jpg" alt="comics Spider-Man">
+                        <h3>Comics Spider-Man #300 (reimpresión) </h3>
+                        <p>S/.95</p>
+                        <a href="carrito.html?producto=Spider-Man&precio=95" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="comics">
+                        <img src="../media/products/c.titan.jpg" alt="mangas Attack on Titan">
+                        <h3>Manga Attack on Titan vol. 1</h3>
+                        <p>S/.150</p>
+                        <a href="carrito.html?producto=Attack&precio=150" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="comics">
+                        <img src="../media/products/c.watchmen.jpg" alt="comics Watchmen ">
+                        <h3>Comics Watchmen edición deluxe</h3>
+                        <p>S/.120</p>
+                        <a href="carrito.html?producto=Watchmen&precio=120" class="btn-agregar">Agregar al carrito</a>
+                    </div>
+
+                    <div class="producto" id="comics">
+                        <img src="../media/products/c.my-hero.jpg" alt="mangas My Hero">
+                        <h3>Manga My Hero Academia vol. </h3>
+                        <p>S/.150</p>
+                        <a href="carrito.html?producto=MyHero&precio=150" class="btn-agregar">Agregar al carrito</a>
+                    </div> 
+                </div>    
+            </div>    
+        </section>
+
+        <section class="ubicacion">
+            <h2 class="seccion-titulo">Encuentranos Aqui</h2>
+            <div class="mapa">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61238.94691478695!2d-71.6086461783203!3d-16.402760999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91424a5684c75565%3A0x87994cb40f0c3bc4!2sLa%20Torre%20De%20Los%20Comics!5e0!3m2!1ses!2spe!4v1745229203707!5m2!1ses!2spe" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer-container">
+        <div class="footer-social">
+            <a href="https://www.facebook.com/profile.php?id=61575329587965">
+                <img src="../media/Footer/facebook.png" alt=""/>
+
+            </a>
+            <a href="https://www.instagram.com/mundocoleccionable_10/">
+                <img src="../media/Footer/IG.png" alt=""/> 
+            </a>
+            <a href="https://x.com/Mcoleccionable">
+                <img src="../media/Footer/gorjeo.png" alt=""/>
+            </a>
+        </div>
+        <div class="footer-content">    
+            <div class="footer-section">
+                <h3>Sobre Nosotros</h3>
+                <ul>
+                    <li><a href="Sobre Nosotros.html">Nosotros</a></li>
+                    <li><a href="Formas de envio.html">Formas de envío</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Atención al cliente</h3>
+                <ul>
+                    <li><a href="Preguntas Frecuentes.html">Preguntas frecuentes</a></li>
+                    <li><a href="Soporte.html">Soporte</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Políticas</h3>
+                <ul>
+                    <li><a href="Politica de Garantia.html">Política de garantía</a></li>
+                    <li><a href="Politica de Privacidad.html">Política de privacidad</a></li>
+                    <li><a href="Termino y Condiciones.html">Términos y condiciones</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Horario de atención</h3>
+                <ul>
+                    <li>Lunes a Viernes de 8:00 a.m. a 6:00 p.m.</li>
+                    <li>Sábados y Domingos de 9:00 a.m. a 2:00 p.m.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 MundoColeccionable. Todos los derechos reservados.</p>
+            <p>Contacto: info.mundocoleccion@gmail.com | Tel: +51 950 151 869</p>
+        </div>
+    </footer>
+    <script src="../JavaScript/carrito.js"></script>
+    <script src="../Java/Barra de Busqueda.js"></script>
+    <script src="../Java/BusquedaProducto.js"></script>
+</body>
+</html>
+

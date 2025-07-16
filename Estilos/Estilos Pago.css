@@ -1,0 +1,128 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 25 may. 2025, 10:35:11 p. m.
+    Author     : USER
+*/
+
+
+/* Contenido principal */
+.contenido-principal {
+    padding: 30px;
+    background-color: antiquewhite;
+}
+
+.seccion-titulo {
+    text-align: center;
+    font-size: 2rem;
+    color: #001f8e;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ffcc00;
+    display: inline-block;
+}
+
+/* Estilos específicos para la página de pago */
+    .formulario-pago {
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 30px;
+      background-color: #fefefe;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .formulario-pago h2 {
+      text-align: center;
+      color: #001f8e;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+    }
+
+    .resumen-compra {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin-bottom: 25px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+
+    .formulario-pago label {
+      display: block;
+      margin: 15px 0 8px;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .formulario-pago input {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-family: 'Rubik', sans-serif;
+    }
+
+    .btn-pagar {
+      width: 100%;
+      padding: 14px;
+      margin-top: 20px;
+      background-color: #001f8e;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .mensaje-exito {
+      display: none;
+      text-align: center;
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #e8f5e9;
+      color: #2e7d32;
+      border-radius: 6px;
+    }
+    
+    .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contenido {
+    background: white;
+    padding: 25px 20px;
+    border-radius: 12px;
+    max-width: 300px;
+    text-align: center;
+    animation: aparecer 0.3s ease;
+    position: relative;
+}
+
+.modal-contenido h2 {
+    color: #003366;
+    margin-bottom: 10px;
+}
+
+.cerrar {
+    position: absolute;
+    top: 10px; right: 15px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+@keyframes aparecer {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+    
+    

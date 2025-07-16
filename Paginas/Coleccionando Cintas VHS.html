@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Mundo Coleccionable</title>
+    <link href="../Estilos/Estilos Generales.css" rel="stylesheet" type="text/css"/>
+    <link href="../Estilos/Estilos C.cinta VHS.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="Index.html" class="logo-link">
+            <div class="logo">
+                <img src="../media/Destacados/logo2.png" alt="Logo" width="90"/>
+                <h1>Mundo Coleccionable</h1>
+            </div>
+        </a>
+
+        <!-- Barra de búsqueda funcional -->
+    <div class="search-container">
+        <form class="search-form">
+            <input type="text" id="search-input" placeholder="Buscar...">
+            <button type="submit" class="search-button">Buscar</button>
+        </form>
+        <div class="search-results">            
+        </div>
+    </div>
+
+        <nav>
+            <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="carrito.html">🛒 Carrito</a></li>
+                <li><a href="pago.html">💳 Pago</a></li>
+                <li><a href="login.html">👤Iniciar Sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="blog-container">
+        <section class="articulo">
+            <h2 class="articulo-titulo"><i class="fas fa-video"></i> Coleccionando Cintas VHS: Un Viaje a la Nostalgia</h2>
+            <div class="articulo-contenido">
+                <p>En la era del streaming y los discos Blu-ray de alta definición, las cintas VHS pueden parecer una reliquia del pasado. Sin embargo, para muchos coleccionistas, el formato de Video Home System tiene un encanto único. Desde ediciones raras hasta películas que nunca llegaron al formato digital, el coleccionismo de VHS está experimentando un resurgimiento.</p>
+
+                <div class="image-gallery-vhs">
+                    <img id="vhsImage1" src="../media/blog/cintas1.png" alt="Colección de cintas VHS">
+                </div>
+
+                <h3><i class="fas fa-heart"></i> ¿Por qué coleccionar VHS? El Encanto del Formato</h3>
+                <p>Hay varias razones por las que los aficionados se sumergen en este hobby:</p>
+                <ul>
+                    <li><strong>Nostalgia:</strong> Para muchos, es un viaje directo a la infancia, recordando las noches de cine familiar o los videos del videoclub.</li>
+                    <li><strong>Material Exclusivo:</strong> Algunas películas, especialmente ediciones de bajo presupuesto, películas de culto o versiones sin censura, solo se lanzaron en VHS y nunca fueron transferidas a formatos digitales.</li>
+                    <li><strong>Arte de la Carátula:</strong> Las portadas de los VHS son a menudo obras de arte por sí mismas, con ilustraciones y diseños que no se encuentran en los formatos modernos.</li>
+                    <li><strong>El Placer de lo Físico:</strong> A diferencia del streaming, tener una cinta física en tus manos, rebobinarla y sentir la textura, es parte de la experiencia.</li>
+                </ul>
+
+                <h3><i class="fas fa-search"></i> ¿Qué buscar al coleccionar? Identificando Joyas</h3>
+                <p>No todas las cintas VHS valen lo mismo. Algunos factores a considerar:</p>
+                <ul>
+                    <li><strong>Rareza:</strong> Ediciones limitadas, errores de producción o películas que tuvieron una distribución limitada.</li>
+                    <li><strong>Estado:</strong> El estado de la cinta y, crucialmente, de la carátula y el estuche. Un estuche original en buen estado aumenta el valor.</li>
+                    <li><strong>Género:</strong> Películas de terror de bajo presupuesto, ciencia ficción oscura, películas de skate o subculturas, y ciertas ediciones animadas suelen ser muy buscadas.</li>
+                    <li><strong>Sello del distribuidor:</strong> Algunos sellos son más valorados por la calidad o rareza de sus lanzamientos.</li>
+                </ul>
+
+                <div class="image-gallery-vhs">
+                    <img src="../media/blog/cintas2.png" alt="Cintas VHS Raras">
+                </div>
+
+                <h3><i class="fas fa-box-open"></i> Cuidado y Mantenimiento de tu Colección VHS</h3>
+                <p>Para preservar tus tesoros analógicos y asegurar que duren muchos años, sigue estos consejos:</p>
+                <ul>
+                    <li><strong>Almacenamiento Vertical:</strong> Guarda las cintas en posición vertical para evitar que la cinta se deforme y para distribuir el peso uniformemente.</li>
+                    <li><strong>Ambiente Controlado:</strong> Mantenlas en un lugar fresco y seco, lejos de la luz solar directa, el calor excesivo y la humedad. Las fluctuaciones de temperatura son perjudiciales.</li>
+                    <li><strong>Limpieza del Reproductor:</strong> Limpia tus reproductores VHS regularmente para evitar que el polvo y la suciedad dañen las cintas y los cabezales de reproducción.</li>
+                    <li><strong>Rebobinado Completo:</strong> Rebobina las cintas completamente antes de guardarlas para evitar el estiramiento y la deformación de la cinta magnética.</li>
+                    <li><strong>Manipulación Cuidadosa:</strong> Siempre manipula las cintas por la carcasa, evitando tocar la cinta expuesta.</li>
+                </ul>
+
+                <div class="interactive-area">
+                    <h3><i class="fas fa-star"></i> ¿Comparte tu Cinta Favorita?</h3>
+                    <p>Escribe tu película VHS favorita de todos los tiempos en el cuadro de abajo. ¡Nos encantaría conocer tu joya personal!</p>
+                    <input type="text" id="vhsInput" placeholder="Ej: Regreso al Futuro">
+                    <button id="vhsSubmitBtn" class="articulo-enlace">Enviar Película</button>
+                    <p id="vhsOutput" style="margin-top: 15px; font-weight: bold;"></p>
+                </div>
+            </div>
+        </section>
+
+        <div class="back-to-blog">
+            <a href="blog.html" class="articulo-enlace"><i class="fas fa-arrow-left"></i> Volver al Blog</a>
+        </div>
+    </main>
+
+
+   <footer class="footer-container">
+        <div class="footer-social">
+    <a href="https://www.facebook.com/profile.php?id=61575329587965">
+        <img src="../media/Footer/facebook.png" alt=""/>
+
+    </a>
+    <a href="https://www.instagram.com/mundocoleccionable_10/">
+        <img src="../media/Footer/IG.png" alt=""/> 
+    </a>
+    <a href="https://x.com/Mcoleccionable">
+        <img src="../media/Footer/gorjeo.png" alt=""/>
+    </a>
+</div>
+    <div class="footer-content">    
+        <div class="footer-section">
+            <h3>Sobre Nosotros</h3>
+            <ul>
+                <li><a href="Sobre Nosotros.html">Nosotros</a></li>
+                <li><a href="Formas de envio.html">Formas de envío</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Atención al cliente</h3>
+            <ul>
+                <li><a href="Preguntas Frecuentes.html">Preguntas frecuentes</a></li>
+                <li><a href="Soporte.html">Soporte</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Políticas</h3>
+            <ul>
+                <li><a href="Politica de Garantia.html">Política de garantía</a></li>
+                <li><a href="Politica de Privacidad.html">Política de privacidad</a></li>
+                <li><a href="Termino y Condiciones.html">Términos y condiciones</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h3>Horario de atención</h3>
+            <ul>
+                <li>Lunes a Viernes de 8:00 a.m. a 6:00 p.m.</li>
+                <li>Sábados y Domingos de 9:00 a.m. a 2:00 p.m.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>© 2025 MundoColeccionable. Todos los derechos reservados.</p>
+        <p>Contacto: info.mundocoleccion@gmail.com | Tel: +51 950 151 869</p>
+    </div>
+</footer>
+    <script src="../Java/C.cintas VHS.js"></script>
+    <script src="../Java/Barra de Busqueda.js"></script>
+    </body>
+</html>

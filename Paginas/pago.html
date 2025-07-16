@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago - Mundo Coleccionable</title>
+    <link href="../Estilos/Estilos Pago.css" rel="stylesheet" type="text/css"/>
+    <link href="../Estilos/Estilos Generales.css" rel="stylesheet" type="text/css"/>
+
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="Index.html" class="logo-link">
+            <div class="logo">
+                <img src="../media/Destacados/logo2.png" alt="Logo" width="90"/>
+                <h1>Mundo Coleccionable</h1>
+            </div>
+        </a>
+
+        <!-- Barra de búsqueda funcional -->
+        <div class="search-container">
+            <form class="search-form">
+                <input type="text" id="search-input" placeholder="Buscar...">
+                <button type="submit" class="search-button">Buscar</button>
+            </form>
+            <div class="search-results">            
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="carrito.html">🛒 Carrito</a></li>
+                <li><a href="pago.html">💳 Pago</a></li>
+                <li><a href="login.html">👤Iniciar Sesion</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+        <div class="formulario-pago">
+            <h2>Datos de Pago</h2>
+
+            <div class="resumen-compra" id="resumen-carrito">
+                <h3>Resumen de tu compra:</h3>
+                <ul id="lista-resumen"></ul>
+                <p id="total-resumen" style="font-weight: bold; margin-top: 10px;"></p>
+            </div>
+
+            <form id="form-pago">
+                <label for="nombre">Nombres y Apellidos</label>
+                <input type="text" id="nombre" required>
+
+                <label for="numero-tarjeta">Número de Tarjeta</label>
+                <input type="text" id="numero-tarjeta" maxlength="19" placeholder="XXXX XXXX XXXX XXXX" required>
+
+                <label for="fecha-exp">Fecha de Expiración</label>
+                <input type="month" id="fecha-exp" required>
+
+                <label for="cvv">CVV (clave de seguridad)</label>
+                <input type="password" id="cvv" maxlength="4" required>
+
+                <button type="submit" class="btn-pagar">Confirmar Pago</button>
+            </form>
+
+            <div id="modal-exito" class="modal">
+                <div class="modal-contenido">
+                    <span id="cerrar-modal" class="cerrar">&times;</span>
+                    <h2>🎉 ¡Gracias por tu compra!</h2>
+                    <p>Tu pago ha sido procesado exitosamente. Pronto recibirás tu confirmación.</p>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer-container">
+        <div class="footer-social">
+            <a href="https://www.facebook.com/profile.php?id=61575329587965">
+                <img src="../media/Footer/facebook.png" alt=""/>
+            </a>
+            <a href="https://www.instagram.com/mundocoleccionable_10/">
+                <img src="../media/Footer/IG.png" alt=""/>
+            </a>
+            <a href="https://x.com/Mcoleccionable">
+                <img src="../media/Footer/gorjeo.png" alt=""/>
+            </a>
+        </div>
+        <div class="footer-content">    
+            <div class="footer-section">
+                <h3>Sobre Nosotros</h3>
+                <ul>
+                    <li><a href="Sobre Nosotros.html">Nosotros</a></li>
+                    <li><a href="Formas de envio.html">Formas de envío</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Atención al cliente</h3>
+                <ul>
+                    <li><a href="Preguntas Frecuentes.html">Preguntas frecuentes</a></li>
+                    <li><a href="Soporte.html">Soporte</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Políticas</h3>
+                <ul>
+                    <li><a href="Politica de Garantia.html">Política de garantía</a></li>
+                    <li><a href="Politica de Privacidad.html">Política de privacidad</a></li>
+                    <li><a href="Termino y Condiciones.html">Términos y condiciones</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Horario de atención</h3>
+                <ul>
+                    <li>Lunes a Viernes de 8:00 a.m. a 6:00 p.m.</li>
+                    <li>Sábados y Domingos de 9:00 a.m. a 2:00 p.m.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 MundoColeccionable. Todos los derechos reservados.</p>
+            <p>Contacto: info.mundocoleccion@gmail.com | Tel: +51 950 151 869</p>
+        </div>
+    </footer>
+    <script src="../Java/pago.js" type="text/javascript"></script>
+    <script src="../Java/Barra de Busqueda.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,262 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 1 jul. 2025, 10:35:03 p. m.
+    Author     : USER
+*/
+/*  ESTILOS GENERALES*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    color: #333;
+}
+
+/*  HEADER  */
+.main-header {
+    background-color: #222;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-header .logo h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #ffcc00;
+}
+
+/* nAVEGACIÓN Y RESPONSIVIDAD  */
+.main-nav { position: relative; }
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+.nav-list li a:hover { color: #ffcc00; }
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .main-nav .nav-list {
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+        z-index: 999;
+    }
+    .main-nav .nav-list.active { display: flex; }
+    .main-nav .nav-list li {
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #444;
+    }
+    .menu-toggle { display: block; }
+}
+
+/*  FOOTER */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    gap: 20px;
+}
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+}
+.footer-column h4 {
+    color: #ffcc00;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+.footer-column ul { list-style: none; padding: 0; }
+.footer-column ul li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    cursor: pointer;
+}
+.footer-column ul li:hover { color: #ffcc00; }
+.footer-logo {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    font-size: 0.85rem;
+    color: #bbb;
+}
+@media (max-width: 768px) {
+    .footer-columns { flex-direction: column; align-items: center; }
+    .footer-column { text-align: center; min-width: unset; width: 100%; }
+}
+
+/*  ESTILOS DEL ARTÍCULO  */
+.blog-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.articulo {
+    background-color: #fefefe;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.articulo-titulo {
+    background-color: #911d2b;
+    color: white;
+    padding: 15px 20px;
+    margin: 0;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+}
+.articulo-titulo .fas {
+    margin-right: 10px;
+    color: #ffcc00;
+}
+.articulo-contenido {
+    padding: 20px 30px;
+}
+.articulo-contenido p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+.articulo-contenido h3 {
+    color: #001f8e;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+.articulo-contenido h3 .fas {
+    margin-right: 8px;
+    color: #911d2b;
+}
+.articulo-contenido ul, .articulo-contenido ol {
+    list-style: disc;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+.articulo-contenido ul li, .articulo-contenido ol li { margin-bottom: 8px; }
+
+/* botones generales (como "Enviar Película") */
+.articulo-enlace {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #001f8e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    border: none;
+    cursor: pointer;
+}
+.articulo-enlace:hover {
+    background-color: #00125c;
+    transform: translateY(-2px);
+}
+
+/* ESTILOS ESPECÍFICOS DE VHS  */
+.image-gallery-vhs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 25px 0;
+    flex-wrap: wrap;
+}
+
+.image-gallery-vhs img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-gallery-vhs img:hover {
+    transform: scale(1.05);
+}
+
+.interactive-area {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-left: 5px solid #ffcc00;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Nuevo: Estilo para el input de texto */
+.interactive-area input[type="text"] {
+    width: calc(100% - 20px); 
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box; 
+}
+
+/* el contenedor del botón "Volver al Blog" */
+.back-to-blog {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.back-to-blog .articulo-enlace {
+    padding: 12px 25px;
+    background-color: #4a4a4a;
+}
+
+.back-to-blog .articulo-enlace:hover {
+    background-color: #2e2e2e;
+}
+
+.back-to-blog .articulo-enlace .fas {
+    margin-right: 8px;
+}

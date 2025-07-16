@@ -1,0 +1,213 @@
+
+
+
+/* Contenido principal */
+.contenido-principal {
+    padding: 30px;
+    background-color: antiquewhite;
+    flex: 1; 
+}
+
+.seccion-titulo {
+    text-align: center;
+    font-size: 2rem;
+    color: maroon;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+    background-color: #fff;
+    text-align: center;
+    height: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.producto img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.producto h3 {
+    font-size: 1.1rem;
+    margin: 0.5em 0;
+    flex-grow: 1;
+}
+
+.producto p {
+    color: red;
+    font-weight: bold;
+    margin: 0.5em 0;
+}
+
+.productos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .productos-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
+    
+    .producto-imagen {
+        height: 160px;
+    }
+}
+.btn-agregar {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: auto;
+    display: inline-block;
+}
+    
+   
+.marquee-oferta {
+    background-color: #911d2b; 
+    color: white;
+    padding: 8px 0; 
+    font-family: 'Arial Black', sans-serif;
+    font-size: 1.1rem; 
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    position: relative;
+    width: 100%;
+    height: 40px; 
+}
+
+.marquee-oferta::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(90deg, rgba(200,60,60,0) 0%, rgba(200,60,60,1) 20%, rgba(200,60,60,1) 80%, rgba(200,60,60,0) 100%);
+    z-index: 1;
+}
+
+.marquee-content {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+    position: relative;
+    z-index: 2;
+    line-height: 1.3; 
+}
+
+.marquee-content span {
+    display: inline-block;
+    padding: 0 8px; 
+}
+
+.destacado {
+    color: #FFD700; 
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(255, 215, 0, 0.7);
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Contenedor del dropdown */
+nav ul li.dropdown {
+  position: relative;
+}
+
+/* Menú desplegable */
+nav ul li .dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: #333;
+  border-radius: 0 0 5px 5px;
+  padding: 0;
+  margin: 0;
+  min-width: 180px;
+  z-index: 999;
+}
+
+/* Mostrar el dropdown al pasar el mouse */
+nav ul li.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Estilo de los enlaces dentro del dropdown */
+nav ul li .dropdown-content li a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li .dropdown-content li a:hover {
+  background-color: #ffcc00;
+  color: #000;
+}
+
+/*.filtros {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.btn-filtro {
+  margin: 0 5px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-filtro:hover {
+  background-color: #222;
+} */
+
